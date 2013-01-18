@@ -7,3 +7,4 @@ cd DTHTMLParser
 rm -f *.h *.m
 curl -s -O $GH_DTHTML/DTHTMLParser.h
 curl -s -O $GH_DTHTML/DTHTMLParser.m
+patch -Np3 -i../DTHTMLParser.diff

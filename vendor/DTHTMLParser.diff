@@ -1,0 +1,12 @@
+diff --git a/vendor/DTHTMLParser/DTHTMLParser.h b/vendor/DTHTMLParser/DTHTMLParser.h
+index f49242c..8a27f2b 100644
+--- a/vendor/DTHTMLParser/DTHTMLParser.h
++++ b/vendor/DTHTMLParser/DTHTMLParser.h
+@@ -6,6 +6,7 @@
+ //  Copyright (c) 2012 Drobnik.com. All rights reserved.
+ //
+ 
++#import <Foundation/Foundation.h>
+ 
+ @class DTHTMLParser;
+ /** The DTHTMLParserDelegate protocol defines the optional methods implemented by delegates of DTHTMLParser objects. 
