@@ -20,6 +20,7 @@
 
 @property (readonly) NSUInteger lastResultCount;
 
++(instancetype)parserWithData:(NSData*)data;
 +(instancetype)parserWithItemAtPath:(NSString*)path;
 
 -(void)enumerateTagsWithName:(NSString*)tagName

@@ -88,9 +88,13 @@ typedef void(^BBUHTMLVisitorBlock)(BBUHTMLElement* element, NSError* error);
 
 @implementation BBUHTMLParser
 
++(instancetype)parserWithData:(NSData*)data {
+  return [[self alloc] initWithData:data encoding:NSUTF8StringEncoding];
+}
+
 +(instancetype)parserWithItemAtPath:(NSString*)path {
 	NSData* data = [NSData dataWithContentsOfFile:path];
-	return [[self alloc] initWithData:data encoding:NSUTF8StringEncoding];
+  return [self parserWithData:data];
 }
 
 -(void)enumerateTagsWithName:(NSString*)tagName
